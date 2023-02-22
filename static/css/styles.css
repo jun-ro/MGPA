@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=Roboto:wght@700&display=swap');
+
+body {
+	background-color: rgba(20, 20, 20);
+	transition: 0.3s;
+}
+
+
+
+.title {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+
+#title-text {
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-family: 'Fira Mono', monospace;
+	font-family: "Roboto", sans-serif;
+	width: 900px;
+	font-size: 100px;
+	font-weight: bold;
+	transform: translateY(15vw);
+}
+
+
+.fake-line {
+	transform: translateY(15vw);
+	margin: 0 auto;
+	width: 500px;
+	height: 5px;
+	background-color: white;
+	transition: 0.5s;
+	animation-name: size;
+	animation-duration: 1s;
+}
+
+@keyframes size {
+	from {
+		width: 0px;
+	}
+
+	to {
+		width: 500px;
+	}
+}
+
+#subtitle-text {
+	margin: 0 auto;
+	text-align: center;
+	background-image: linear-gradient(45deg, #ff00e6, #2cfffb);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	color: white;
+	font-family: 'Fira Mono', monospace;
+	font-family: "Roboto", sans-serif;
+	width: 600px;
+	font-size: 35px;
+	font-weight: bold;
+	transform: translateY(15vw);
+}
+
+
+.footer {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#footer-text {
+	margin: 0 auto;
+	color: white;
+	font-family: "Roboto", monospace;
+	font-weight: light;
+	transform: translateY(5vw)
+}
+
+.buttons-wrapper {
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+
+.Continue {
+	margin: 0 auto;
+	width: 375px;
+	height: 100px;
+	background-color: #A40ABD;
+	background-image: linear-gradient(45deg, #ff00e6, #2cfffb);
+	transform: translate(0vw, 20vw);
+	cursor: pointer;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 500ms cubic-bezier(.13, .53, .38, .97);
+}
+
+.Continue:hover {
+	width: 400px;
+	height: 120px;
+	font-size: 15px;
+}
+
+#continue-text {
+	color: white;
+	text-align: center;
+	font-size: 28.5px;
+	font-family: 'Fira Mono', monospace;
+	font-family: "Roboto", sans-serif;
+}
+
+#continue-rocket {
+	text-align: center;
+	margin: 0 auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: white;
+	font-family: "Roboto", monospace;
+	transition: 0.3s;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+	background-color: white;
+	color: black;
+}
+
+
+
+
+
+
+/* Grades */
+
+#munch-video {
+	margin: 0 auto;
+	transform: translateY(8vw);
+	border-radius: 15px;
+}
+
+
+.fake-pfp {
+	float: right;
+	transform: translate(-1vw, -2vw);
+	width: 50px;
+	height: 50px;
+	background-image: url("https://cdn.discordapp.com/attachments/776859542838444084/1076759351345303624/images.png");
+	border-radius: 50px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.fake-pfp:hover {
+	width: 75px;
+	height: 75px;
+}
+
+
+.fake-pfp:active {
+	width: 40px;
+	height: 40px;
+}
+
+.grid-container {
+	transform: translate(0vw, 5vw);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-rows: auto auto;
+	grid-gap: 30px;
+	height: auto;
+}
+
+.card {
+	margin: 0 auto;
+	background-color: rgb(24, 24, 24);
+	border-radius: 15px;
+	padding: 20px;
+	font-family: "Roboto", monospace;
+	color: white;
+	width: 150px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.add-button {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+}
+
+#add {
+	transform: translate(0vw, 0vw);
+	width: 60%;
+	border-radius: 15px;
+	background-color: transparent;
+	color: white;
+	border: dashed;
+	border-color: rgb(30, 30, 30);
+	outline: none;
+	height: 100%;
+	font-family: "Roboto", monospace;
+	font-size: 25px;
+	cursor: pointer;
+	transition: 0.3s;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#add:hover {
+	width: 65%;
+	height: 105%;
+}
+
+#add:active {
+	width: 60%;
+	height: 95%;
+}
+
+.add-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin: 0 auto;
+	font-size: 40px;
+	border: dashed;
+	border-color: rgb(30, 30, 30);
+	transform: translate(0vw, 1vw);
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	z-index: 3;
+}
+
+
+#grade-percent {
+	margin: 0 auto;
+	transform: translate(-0.25vw, -1vw);
+	height: 25px;
+	border-radius: 15px;
+	background-color: rgb(30, 30, 30);
+	outline: none;
+	border: none;
+	color: white;
+	text-align: center;
+	font-family: "Roboto", monospace;
+}
+
+#grade-percent::-webkit-inner-spin-button,
+#grade-percent::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+
+#grade-type {
+	margin: 0 auto;
+	transform: translate(-.5vw, 0vw);
+	height: 25px;
+	border-radius: 15px;
+	background-color: rgb(30, 30, 30);
+	outline: none;
+	border: none;
+	color: white;
+	text-align: center;
+	font-family: "Roboto", monospace;
+}
+
+#card-title {
+	transform: translate(0vw, -1vw);
+	font-size: 25px;
+	font-family: "Roboto", monospace;
+}
+
+
+.calculation-wrapper {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#calculate {
+	height: 100px;
+	width: 490px;
+	border-radius: 15px;
+	background-image: linear-gradient(45deg, #ff00e6, #2cfffb);
+	color: white;
+	font-family: "Roboto", monospace;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#calculate:hover {
+	height: 110px;
+	width: 500px;
+}
+
+#calculate:active {
+	height: 90px;
+	width: 480px;
+}
+
+
+.result-wrappers {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	float: center;
+}
+
+.results-box {
+	position: fixed;
+	left: 38.2vw;
+	top: -50vw;
+	width: 400px;
+	height: 450px;
+	background-color: rgb(25, 25, 25);
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
+#close-results {
+	background-color: transparent;
+	color: white;
+	font-size: 25px;
+	border: none;
+	transform: translate(8.5vw, 0.5vw);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#close-results:hover {
+	font-size: 22.5px;
+}
+
+#close-results:active {
+	font-size: 22.5px;
+}
+
+
+
+
+#overall-grade-text {
+	color: white;
+	font-family: "Roboto", monospace;
+	font-size: 50px;
+}
+
+
+.progress-outline {
+	margin: 0 auto;
+	height: 30px;
+	width: 90%;
+	background-color: rgb(30, 30, 30);
+	border-radius: 25px;
+}
+
+.progress {
+	height: 30px;
+	width: 50%;
+	background-color: rgb(255, 0, 0);
+	border-radius: 25px;
+	transition: 0.3s;
+	animation-name: fill;
+	animation-duration: 0.5s;
+}
+
+
+#message {
+	margin: 0 auto;
+	font-family: "Roboto", monospace;
+	color: white;
+	font-size: 50px;
+	transform: translate(0vw, 1vw);
+}
+
+@keyframes fill {
+	0% {
+		width: 0%
+	}
+
+	100% {
+		width: 50%
+	}
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient(45deg, #ff00e6, #2cfffb);
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

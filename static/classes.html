@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Classes | MGPA</title>
+	<link rel="stylesheet" href="../css/styles.css">
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<link rel="icon" type="image/png" href="../assets/icon.png" sizes="400x400">
+	<meta property="og:title" content="MGPA">
+	<meta property="og:description" content="Just a cooler way of calculating your grades for MCPS students.">
+	<meta property="og:image" content="../assets/icon.png">
+	<meta property="og:url" content="Idk">
+
+</head>
+
+<body>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="https://discord.com">Discord</a></li>
+		<li><a href="/contact">Contact</a></li>
+		<li style="float:right"></li>
+	</ul>
+
+	<div class="fake-pfp"></div>
+	<div class="calculation-wrapper">
+		<button id="calculate" onclick="CalculateAll()">Wanna calculate BLAZINGLY FAST? 🚀🚀</button>
+	</div>
+	<div class="grid-container">
+		<div class="card">
+			<p id="card-title">N/A</p>
+			<input id="grade-percent" placeholder="Grade Percentage" type="number"></input>
+			<select id="grade-type">
+				<option value="assignment">All Tasks Assignment</option>
+				<option value="practice">Practice and Preparation</option>
+			</select>
+		</div>
+		<div class="card">
+			<p id="card-title">N/A</p>
+			<input id="grade-percent" placeholder="Grade Percentage" type="number"></input>
+			<select id="grade-type">
+				<option value="assignment">All Tasks Assignment</option>
+				<option value="practice">Practice and Preparation</option>
+			</select>
+		</div>
+		<div class="card">
+			<p id="card-title">N/A</p>
+			<input id="grade-percent" placeholder="Grade Percentage" type="number"></input>
+			<select id="grade-type">
+				<option value="assignment">All Tasks Assignment</option>
+				<option value="practice">Practice and Preparation</option>
+			</select>
+		</div>
+
+		<div class="add-button">
+			<button id="add" onclick="addCard()">Add New Grade Card<br>
+				<div class="add-icon">+</div>
+			</button>
+		</div>
+	</div>
+	<div class="result-wrappers">
+		<div class="results-box">
+			<button id="close-results" onclick="closeResults()">X</button>
+			<p id="overall-grade-text">N/A</p>
+			<div class="progress-outline">
+				<div class="progress"></div>
+			</div>
+			<p id="message"></p>
+		</div>
+	</div>
+	<script src="../js/Cards.js"></script>
+	<script src="../js/Grader.js"></script>
+</body>
+
+</html>
