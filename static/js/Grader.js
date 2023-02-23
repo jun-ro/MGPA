@@ -177,6 +177,7 @@ function CalculateAll() {
 			results_text.innerHTML = "A";
 			results_progress.style.width = overall_grade.toString() + "%"
 			results_progress.style.backgroundColor = Colors.Green;
+			results_progress.style.backgroundImage = "None";
 			message_text.innerHTML = `Congrats your overall grade is ${overall_grade}%!`
 		}
 		//B
@@ -184,6 +185,7 @@ function CalculateAll() {
 			results_text.innerHTML = "B";
 			results_progress.style.width = overall_grade.toString() + "%"
 			results_progress.style.backgroundColor = Colors.Blue;
+			results_progress.style.backgroundImage = "None";
 			message_text.innerHTML = `Congrats your overall grade is ${overall_grade}%!`
 
 		}
@@ -192,6 +194,7 @@ function CalculateAll() {
 			results_text.innerHTML = "C";
 			results_progress.style.width = overall_grade.toString() + "%"
 			results_progress.style.backgroundColor = Colors.Yellow;
+			results_progress.style.backgroundImage = "None";
 			message_text.innerHTML = `Congrats your overall grade is ${overall_grade}%!`
 		}
 		//D
@@ -199,16 +202,18 @@ function CalculateAll() {
 			results_text.innerHTML = "D";
 			results_progress.style.width = overall_grade.toString() + "%"
 			results_progress.style.backgroundColor = Colors.Orange;
+			results_progress.style.backgroundImage = "None";
 			message_text.innerHTML = `Congrats your overall grade is ${overall_grade}%!`
+
 
 		}
 		//F
 		else if (overall_grade < 60) {
 			results_text.innerHTML = "F";
 			results_progress.style.width = overall_grade.toString() + "%"
-			results_progress.style.backgroundColor = Colors.Red;
+			results_progress.style.backgroundColor = Colors.Red;	
 			message_text.innerHTML = `Congrats your overall grade is ${overall_grade}%!`
-
+			results_progress.style.backgroundImage = "None";
 		}
 	}
 }
