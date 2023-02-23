@@ -441,33 +441,33 @@ li a:hover {
 
 /* IPhone 7 */
 @media only screen and (min-width: 750px) and (max-width: 750px) and (min-height: 1334px) and (max-height: 1334px) {
-  /* CSS styles go here */ 
+	/* CSS styles go here */
 
-	.grid-container{
-		    transform: translate(0vw, 10vw);
-		    display: grid;
-		    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		    grid-template-rows: auto auto;
-		    grid-gap: 30px;
-		    height: auto;
-    }
+	.grid-container {
+		transform: translate(0vw, 10vw);
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-rows: auto auto;
+		grid-gap: 30px;
+		height: auto;
+	}
 
-	#calculate{
-		    transform: translate(2.5vw, 5vw);
-		    height: 100px;
-		    width: 490px;
-		    border-radius: 15px;
-		    background-image: linear-gradient(45deg, #ff00e6, #2cfffb);
-		    color: white;
-		    font-family: "Roboto", monospace;
-		    font-size: 20px;
-		    cursor: pointer;
-		    transition: 0.3s;
+	#calculate {
+		transform: translate(2.5vw, 5vw);
+		height: 100px;
+		width: 490px;
+		border-radius: 15px;
+		background-image: linear-gradient(45deg, #ff00e6, #2cfffb);
+		color: white;
+		font-family: "Roboto", monospace;
+		font-size: 20px;
+		cursor: pointer;
+		transition: 0.3s;
 	}
 
 
 
-	.results-box{
+	.results-box {
 		position: fixed;
 		left: 20vw;
 		top: -100vw;
@@ -478,13 +478,165 @@ li a:hover {
 		transition: 0.3s;
 	}
 
-    #close-results{
-	        background-color: transparent;
+	#close-results {
+		background-color: transparent;
 		color: white;
 		font-size: 25px;
 		border: none;
 		transform: translate(22.5vw, 0.5vw);
 		cursor: pointer;
 		transition: 0.3s;
-    }
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 320px) and (min-height: 568px) and (max-height: 568px) {
+
+	#overall-grade-text {
+		transform: translate(3.5px, 10px);
+		text-align: center;
+		color: white;
+		font-family: "Roboto", monospace;
+		font-size: 50px;
+	}
+
+	#add {
+		transform: translate(0vw, 0vw);
+		width: 60%;
+		border-radius: 15px;
+		background-color: transparent;
+		color: white;
+		border: dashed;
+		border-color: rgb(30, 30, 30);
+		outline: none;
+		height: 120%;
+		font-family: "Roboto", monospace;
+		font-size: 25px;
+		cursor: pointer;
+		transition: 0.3s;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#add:hover {
+		width: 50%;
+		height: 120%;
+	}
+
+	.results-box {
+		margin: 0 auto;
+		position: fixed;
+		left: 11vw;
+		top: -200vw;
+		width: 250px;
+		height: 400px;
+		background-color: rgb(25, 25, 25);
+		border-radius: 15px;
+		transition: 0.3s;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	#close-results {
+		background-color: transparent;
+		color: white;
+		font-size: 25px;
+		border: none;
+		transform: translate(30vw, 2.5vw);
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	#message {
+		margin: 0 auto;
+		font-family: "Roboto", monospace;
+		color: white;
+		font-size: 30px;
+		transform: translate(0vw, 7.5vw);
+	}
+
+	.fake-pfp{
+		float: right;
+		transform: translate(-5vw, -12vw);
+		width: 50px;
+		height: 50px;
+		background-image: url("https://cdn.discordapp.com/attachments/776859542838444084/1076759351345303624/images.png");
+		border-radius: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: 0.3s;
+		cursor: pointer;
+	}
+
+	#calculate {
+		transform: translate(-0.5vw,5vw);
+		height: 100px;
+		width: 300px;
+		border: none;
+		border-radius: 15px;
+		background-image: linear-gradient(45deg, #ff00e6, #2cfffb);
+		color: white;
+		font-family: "Roboto", monospace;
+		font-size: 20px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	#calculate:hover{
+		height: 105px;
+		width: 302px;
+	}
+
+	#calculate:active{
+		height: 90px;
+		width: 290px;
+	}
+
+	.grid-container {
+		transform: translate(0vw, 10vw);
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-rows: auto auto;
+		grid-gap: 30px;
+		height: auto;
+	}
+
+	#grade-type {
+		margin: 0 auto;
+		transform: translate(-2.5vw, 1vw);
+		height: 25px;
+		border-radius: 15px;
+		background-color: rgb(30, 30, 30);
+		outline: none;
+		border: none;
+		color: white;
+		text-align: center;
+		font-family: "Roboto", monospace;
+	}
+	#grade-percent {
+		margin: 0 auto;
+		transform: translate(-1.5vw, -1vw);
+		height: 25px;
+		border-radius: 15px;
+		background-color: rgb(30, 30, 30);
+		outline: none;
+		border: none;
+		color: white;
+		text-align: center;
+		font-family: "Roboto", monospace;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		color: white;
+		font-family: "Roboto", monospace;
+		transition: 0.3s;
+		font-size:12.5px;
+	}
 }

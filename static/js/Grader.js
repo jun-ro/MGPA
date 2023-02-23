@@ -158,7 +158,13 @@ function CalculateAll() {
 		var message_text = document.querySelector("#message");
 		var results_box = document.querySelector(".results-box");
 
-		results_box.style.top = '10vw';
+		if (window.screen.width === 750 && window.screen.height === 1334) {
+			results_box.style.top = '60vw';
+		} 
+		else if(window.screen.width === 320 && window.screen.height === 568) {
+			results_box.style.top = '20vw';
+		}
+
 
 		if (overall_grade > 1000000000000) {
 			results_text.innerHTML = "S++++? What??";
@@ -211,7 +217,7 @@ function CalculateAll() {
 		else if (overall_grade < 60) {
 			results_text.innerHTML = "F";
 			results_progress.style.width = overall_grade.toString() + "%"
-			results_progress.style.backgroundColor = Colors.Red;	
+			results_progress.style.backgroundColor = Colors.Red;
 			message_text.innerHTML = `Congrats your overall grade is ${overall_grade}%!`
 			results_progress.style.backgroundImage = "None";
 		}
@@ -221,5 +227,5 @@ function CalculateAll() {
 
 function closeResults() {
 	var results = document.querySelector(".results-box");
-	results.style.top = '-50vw'
+	results.style.top = '-200vw'
 }
